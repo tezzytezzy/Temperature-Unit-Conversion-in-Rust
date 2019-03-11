@@ -38,24 +38,6 @@ fn get_base_and_quote_units() -> (char, char) {
                 _   => println!("Sorry, don't understand your input!"),
             }
         }
-
-        // if f_or_c.len() > 2 {
-        //     //'\n' will be added at the end as user press Enter key!
-        //     //Thus, 1 (one) char plus '\n'
-        //     println!("Please type either F(ahrenheit) or C(elcius)!");
-        // } else {
-        //     match f_or_c.trim() {
-        //         "f" | "F" => {
-        //             println!("Your base is: Fahrenheit(F)");
-        //             return ('F', 'C');
-        //         },
-        //         "c" | "C" => {
-        //             println!("Your base is: Celcius(C)");
-        //             return ('C', 'F');
-        //         },
-        //         _   => println!("Sorry, don't understand your input!"),
-        //     }
-        // }
     }
 }
 
