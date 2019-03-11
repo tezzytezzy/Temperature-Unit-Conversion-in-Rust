@@ -18,10 +18,13 @@ fn get_base_and_quote_units() -> (char, char) {
 
         io::stdin().read_line(&mut f_or_c).expect("Failed to read the line");
 
-        if f_or_c.len() > 2 {
+        if f_or_c == "\n" {
+            //Only new line character supplied
+            println!("No input supplied! Please type either F(ahrenheit) or C(elcius)!");
+        } else if f_or_c.len() > 2 {
             //'\n' will be added at the end as user press Enter key!
             //Thus, 1 (one) char plus '\n'
-            println!("Please type either F(ahrenheit) or C(elcius)!");
+            println!("Please type ONLY F(ahrenheit) or C(elcius)!");
         } else {
             match f_or_c.trim() {
                 "f" | "F" => {
@@ -35,6 +38,24 @@ fn get_base_and_quote_units() -> (char, char) {
                 _   => println!("Sorry, don't understand your input!"),
             }
         }
+
+        // if f_or_c.len() > 2 {
+        //     //'\n' will be added at the end as user press Enter key!
+        //     //Thus, 1 (one) char plus '\n'
+        //     println!("Please type either F(ahrenheit) or C(elcius)!");
+        // } else {
+        //     match f_or_c.trim() {
+        //         "f" | "F" => {
+        //             println!("Your base is: Fahrenheit(F)");
+        //             return ('F', 'C');
+        //         },
+        //         "c" | "C" => {
+        //             println!("Your base is: Celcius(C)");
+        //             return ('C', 'F');
+        //         },
+        //         _   => println!("Sorry, don't understand your input!"),
+        //     }
+        // }
     }
 }
 
