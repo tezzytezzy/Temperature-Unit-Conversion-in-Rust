@@ -1,2 +1,2 @@
-# Temperature-Unit-Conversion-in-Rust
+# Temperature Unit Conversion in Rust
 Conversion between Fahrenheit and Celcius
